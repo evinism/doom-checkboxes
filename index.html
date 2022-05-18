@@ -45,8 +45,9 @@
     </p>
     <div id="hide">
         <p id="focushint"></p>
-        <div class="container" style="display: none">
+        <div class="container">
             <canvas id="screen" width="640" height="400" tabindex="0">This is where the DooM screen should render.</canvas>
+            <canvas id="screen2" width="640" height="400" tabindex="0">This is where the second canvas should render.</canvas>
             <span>&nbsp;</span>
             <div id="output"></div>
         </div>
@@ -69,6 +70,7 @@
     </ul>
     </div>
     <video id="doom-video" width="160" height="100"></video>
+    <video id="doom-video2" width="160" height="100"></video>
     <div id="checkboxes"></div>
     <p>Credits: DOOM via <a href="https://github.com/diekmann/wasm-fizzbuzz">WebAssembly from Scratch Article</a>, Checkbox library via <a href="https://www.bryanbraun.com/checkboxland/">Checkboxland</a>.
 </body>

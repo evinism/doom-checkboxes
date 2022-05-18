@@ -57,6 +57,8 @@ function getMilliseconds() {
 
 /*doom is rendered here*/
 const canvas = document.getElementById("screen");
+const canvas2 = document.getElementById("screen2");
+
 const doom_screen_width = 320 * 2;
 const doom_screen_height = 200 * 2;
 
@@ -86,6 +88,9 @@ function drawCanvas(ptr) {
   var ctx = canvas.getContext("2d");
 
   ctx.putImageData(render_screen, 0, 0);
+  var ctx2 = canvas2.getContext("2d");
+  ctx2.filter = "contrast(0.7) brightness(2)";
+  ctx2.drawImage(canvas, 0, 0);
 
   ++number_of_draws;
 }
